@@ -1,0 +1,74 @@
+body {
+    padding: .5rem;
+    margin: .1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    text-decoration: none;
+    padding: .5rem;
+}
+.panel {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+img {
+    border-radius: 5rem;
+}
+
+h1 {
+    color: red;
+}
+.hero {
+    aspect-ratio: 5/3;
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+}
+.checked{
+    color: red;
+}
+.empty {
+    color: red;
+}
+.inform span {
+    color: red;
+}
+button {
+    background: red;
+    border-radius: .5rem;
+    color: white;
+    font-size: 1rem;
+    padding: .7rem 2rem;
+    border: 0;
+}
+.content-rating {
+    border: 1px solid black;
+    border-radius: .3rem;
+    padding: .2rem;
+    margin: 0 .5rem;
+}
+.fa-magnifying-glass {
+    position: relative;
+    display: flex;
+    min-width: -100px;
+}
+.search {
+    position: relative;
+    color: gray;
+    padding: 5px;
+    font-size: x-small;
+    border: 2px solid rgb(222, 219, 219) ;
+    left: 30px;
+    border-radius: 3px;
+    border-right-width: 100px;
+}
+
