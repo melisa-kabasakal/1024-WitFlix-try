@@ -121,6 +121,29 @@ section .movies {
     justify-content: space-between;
     gap: .5rem;
 }
+footer nav a{
+    text-decoration: none;  
+    padding: 1rem;
+}
+footer nav a:hover {
+    color: red;
+}
+footer p {
+    padding: 1rem;
+}
+.bottom-inform {
+    display: flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+footer .applicatins .apple {
+    width: 40%;
+    background: aliceblue;
+}
+footer .applicatins .google{
+    width: 40%;
+}
+
 
 
 
