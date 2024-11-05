@@ -3,6 +3,9 @@ body {
     margin: .1rem;
     font-family: Arial, Helvetica, sans-serif;
 }
+h2, h4 {
+    text-transform: uppercase;
+}
 a:hover {
     color: red;
 }
@@ -27,9 +30,8 @@ header .panel {
     flex: 1;
     justify-content: flex-end;
 }
-header input {
+header .panel input {
     padding: .4rem, 2rem, .4rem, .4rem;
-    width: 160px;
 }
 header .glass {
     height: 16px;
@@ -78,14 +80,48 @@ button {
     margin: 0 .5rem;
 }
 
-.popular-top, .reccomend-top {
+.popular-top, .recommend-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
 }
 .movies {
-    border: 1px solid black;
+    padding: 1rem;
 }
+.movies-bottom{
+    border: 1px solid black;
+    width: 250px;
+    height: 140px;
+    padding: 1rem;
+    
+}
+.movies .content-rating {
+    margin-left: .3px;
+
+}
+section button{
+    padding-left: .3rem;
+    margin: .8rem;
+    margin-left: .1px;
+    width: 50%;
+    height: 27%;
+}
+section .fa-play, .fa-solid {
+    margin-right: .1rem;
+}
+section nav a {
+    text-decoration: none;
+}
+section nav a:hover {
+    color: red;
+}
+section .movies {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+}
+
 
 
 
