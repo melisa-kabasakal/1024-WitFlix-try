@@ -121,6 +121,20 @@ section .movies {
     justify-content: space-between;
     gap: .5rem;
 }
+section .container {
+    width: 100%;
+    aspect-ratio: 3/1;
+    padding: 40px 0;
+    border: solid black 2px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+}
+section .movies {
+    display: grid;
+    grid-template-columns: repeat(7, 300px);
+}
 footer nav a{
     text-decoration: none;  
     padding: 1rem;
