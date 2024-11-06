@@ -15,23 +15,45 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-header nav {
+header .topics {
     display: flex;
-    gap: .3rem;
+    gap: .5rem;
+    margin-right: 20%;
 }
-header nav a {
+header .topics a {
     text-decoration: none;
-    padding: .5rem;
+    padding: .3rem;
 }
-header .panel {
+header .panel-item {
     display: flex;
     align-items: center;
     gap: .6rem;
     flex: 1;
     justify-content: flex-end;
 }
-header .panel input {
+li {
+    list-style: none;
+}
+header .hamMenu {
+    display: none;
+    cursor: pointer;
+}
+header .hamMenu .bar:hover {
+    color: red;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+header input {
     padding: .4rem, 2rem, .4rem, .4rem;
+    
 }
 header .glass {
     height: 16px;
@@ -123,9 +145,10 @@ section .movies {
 }
 section .container {
     width: 100%;
-    aspect-ratio: 3/1;
     padding: 40px 0;
     border: solid black 2px;
+}
+.movies{
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
@@ -156,6 +179,37 @@ footer .applicatins .apple {
 }
 footer .applicatins .google{
     width: 40%;
+}
+@media(max-width: 768px) {
+    .hamMenu{
+        display: block;
+    }
+    .hamMenu .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamMenu .active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamMenu .active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+    .panel {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap:0;
+        flex-direction: column;
+        background-color: aliceblue;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .panel-item {
+        margin: 16px 0;
+    }
+    .panel .active{
+        left: 50px;
+    }
 }
 
 
